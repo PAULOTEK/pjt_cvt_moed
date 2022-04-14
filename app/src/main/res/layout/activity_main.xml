@@ -1,45 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/qual_valor_em_real"
-     />
+        android:text="@string/qual_valor_em_real" />
+
     <EditText
+        android:id="@+id/editValor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:inputType=""
         android:text=""
-        />
+       />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/valor_em_d_lar"
-        />
+        android:text="@string/valor_em_d_lar" />
+
+    <TextView
+        android:id="@+id/textDolar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/d_lar" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/d_lar"
-        />
+        android:text="@string/valor_em_euro" />
+
     <TextView
+        android:id="@+id/testeuro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/valor_em_euro"
-        />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/euro"
-        />
+        android:text="@string/euro" />
 
     <Button
+        android:id="@+id/btncalculate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/c_lcular"
-        />
+        android:text="@string/c_lcular" />
 </LinearLayout>
